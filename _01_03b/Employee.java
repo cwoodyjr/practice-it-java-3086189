@@ -1,8 +1,5 @@
 package _01_03b;
 
-import java.io.FileReader;
-import java.util.Base64;
-
 public class Employee {
 
   public static void main(String[] args) {
