@@ -36,6 +36,9 @@ public class GradingSystem {
 
   public String retakeMessage(int percentage, boolean allowedToRetake) {
     // If percentage is less than 60 and allowedToRetake is true, return a String
+if(percentage <= 60 && allowedToRetake){
+  return "student is allowed to retak";
+}
     // that says "The student has been entered for a retake."
     // If percentage is less than 60 and allowedToRetake is false, return a String
     // that says "The student is not allowed to retake this exam."
