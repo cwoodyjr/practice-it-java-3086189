@@ -4,17 +4,34 @@ public class GradingSystem {
 
   public boolean isAPass(int percentage) {
     // Return true if the percentage is higher than or equal to 60.
+    if (percentage >= 60) {
+      return true;
+    }
     // Otherwise return false.
     return false;
   }
 
   public char getGrade(int percentage) {
     // If the percentage is 90 or above, return 'A'.
+    if(percentage >= 90){
+      return 'A';
+    }
     // If it's 80-89, return 'B'.
+    else if(percentage >= 80){
+      return 'B';
+    }
     // If it's 70-79, return 'C'.
+    else if(percentage >= 70){
+      return 'C';
+    }
     // If it's 60-69, return 'D'.
+    else if (percentage >= 60) {
+      return '';
+    }
     // If it's less than 60, return 'F'.
-    return 'X';
+    else{
+      return 'F';
+    }
   }
 
   public String retakeMessage(int percentage, boolean allowedToRetake) {
